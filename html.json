@@ -1,0 +1,70 @@
+{
+	 "gl-form-input": {
+		"prefix": "gl-form-input",
+		"body": [
+			"<gl-form-input label=\"\" value=\"\"></gl-form-input>"
+		]
+	},
+	 "gl-form-dropdown-menu": {
+		"prefix": "gl-form-dropdown-menu",
+		"body": [
+		"<gl-form-dropdown-menu label=\"\">",
+		"<paper-listbox class=\"\">",
+		"<paper-item value=\"\">ตัวอักษร</paper-item>",
+		"</paper-listbox>",
+		"</gl-form-dropdown-menu>"
+		]
+	},
+	"gl-form-panel": {
+		"prefix": "gl-form-panel",
+		"body": [
+			"<gl-form-panel set-padding=\"10px 20px 10px 20px\" set-border=\"1px\">",
+				"<gl-form-panel-head label=\"Header\" set-padding=\"10px\" set-border=\"1px\">",
+					"<!--content-->",
+				"</gl-form-panel-head>",
+				"<gl-form-panel-body label=\"Body\" set-padding=\"10px\" set-border=\"1px\">",
+				"	<!--content-->",
+				"</gl-form-panel-body>",
+				"<gl-form-panel-footer label=\"Footer\" set-padding=\"10px\">",
+				"<!--content-->",
+				"</gl-form-panel-footer>",
+			"</gl-form-panel>"
+		]
+	},
+	"gl-form-combo-box": {
+		"prefix": "gl-form-combo-box",
+		"body": [
+			"<gl-combo-box label=\"\" items=\"\" item-label-path=\"\" item-value-path=\"\" value=\"\"></gl-combo-box>"
+		]
+	},
+	"gl-table":{
+		"prefix": "gl-table",
+		"body": [
+			"<table class=\"gl-table-default\">",
+				"<thead>",
+					"<tr>",
+						"<th></th>",
+					"</tr>",
+			" </thead>",
+			" <tbody>",
+					"<tr>",
+						"<td></td>",
+				" </tr>",
+				"</tbody>",
+             "</table>"
+		]
+	},
+	"import":{
+		"prefix": "import",
+		"body": [
+		"<link rel=\"import\" href=\"../../../bower_components/polymer/polymer.html\">",
+		"<link rel=\"import\" href=\"../../layout/shared-styles.html\">",
+		"<link rel=\"import\" href=\"../../nylon-behavior.html\">",
+		"<link rel=\"import\" href=\"../components/page-header.html\">",
+		"<link rel=\"import\" href=\"../components/page-panel.html\">",
+		"<link rel=\"import\" href=\"../../../bower_components/vaadin-combo-box/vaadin-combo-box.html\">",
+		"<link rel=\"import\" href=\"../../../bower_components/nylon-panel/nylon-panel-right.html\">",
+		"<link rel=\"import\" href=\"../../../bower_components/paper-button/paper-button.html\">"
+		]
+	}
+}

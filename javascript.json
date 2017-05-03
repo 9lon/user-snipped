@@ -1,0 +1,101 @@
+{
+    "toast-load": {
+        "prefix": "toast-load",
+        "body": [
+             "this.fire('toast',{status:'load'});", 
+        ],
+        "description": "toast load"
+    },
+    "toast-success": {
+        "prefix": "toast-success",
+        "body": [
+                "this.fire('toast',{status:'success',text:'บันทึกสำเร็จ',",
+                    "  callback:function(){",
+                    "  }",
+                " });",
+        ],
+        "description": "toast success"
+    },
+     "toast-connectError": {
+        "prefix": "toast-connectError",
+        "body": [
+               " this.fire('toast',{status:'connectError',text:'Error code 404 not found',", 
+               " callback:function(){",
+               " }})",
+        ],
+        "description": "toast connectError"
+    },
+    "toast-dialog": {
+        "prefix": "toast-dialog",
+        "body": [
+                "this.fire('toast',{ ",
+                   " status:'openDialog',",
+                   " text:'ต้องการลบข้อมูลใช่หรือไม่ ?',",
+                   " confirmed:this._deleteData, ",
+                   " el: this, ",
+                   " data:'' ",
+               " })",
+        ],
+        "description": "toast dialog"
+    },
+     "axios": {
+        "prefix": "axios",
+        "body": [
+                "axios.${1:event}('${2:link}',{",
+                  "params:{}",
+                "})",
+                  ".then((response)=>{",
+                      "console.log('success!!');",
+                      "console.log(response.data);",
+                  "})",
+                  ".catch((error)=>{",
+                      "console.log('error');",
+                      "console.log(error);",
+                  "});"
+        ],
+        "description": "axios"
+    },
+    "log": {
+    "prefix": "log",
+    "body": [
+           "console.log(${1:event});"
+        ],
+        "description": "console.log"
+    },
+    "logJson": {
+    "prefix": "log.Json",
+    "body": [
+           "console.log(JSON.stringify(${1:event}));"
+        ],
+        "description": "log.Json"
+    },
+    "reducer": {
+    "prefix": "reducer",
+    "body": [
+            " import axios from '../axios'",
+            " import { commonAction } from '../config'",
+            " const initialState = {}",
+            " export function nameReducer(state = initialState, action) {",
+            "      switch (action.type) {",
+            "       case '':",
+            "       return Object.assign({}, state, { : action.payload });     ",
+            "             default:",
+            "            return state",
+            "    }",
+            "}",
+            " export function nameAction(store) {",
+            "    return [commonAction(),",
+            "          {",   
+            "        }",
+            "    ]",
+            "}"
+        ],
+        "description": "reducer"
+    }
+    
+}
+
+
+  
+
+
