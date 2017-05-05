@@ -1,0 +1,7 @@
+<script>
+    ValidateFormBehavior = {
+        validateForm:function(required){
+            return Polymer.dom(this.root).querySelectorAll(required).map((el)=> el.validate()).every(elem => elem == true)
+        },
+    };
+</script>
